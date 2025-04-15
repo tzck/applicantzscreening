@@ -35,19 +35,12 @@ def reverse(sentence):
                 else: 
                     # keep alphanumeric
                     reversed_letters.append(letters[i])
-
-            # print(indices)
-            # print(punctuation)
             
             reversed_letters.reverse()
 
             # add back punctuation in normal spot
             for idx in range(len(indices)):
                 reversed_letters.insert(indices[idx], punctuation[idx])
-                # if idx == 0:
-                #     reversed_letters.insert(indices[idx], punctuation[idx])
-                # elif idx != len(indices):
-                #     reversed_letters.insert(indices[idx]+1, punctuation[idx])
             
             rev_string = ''.join(reversed_letters)
             reverse_list.append(rev_string)
@@ -56,8 +49,6 @@ def reverse(sentence):
     
 
 def main():
-    # line = input("Enter sentence: ")
-    # print(reverse(line))
 
     # TESTS
 
